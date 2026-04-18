@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,900;1,900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────
+   Root Design Tokens
+───────────────────────────────────────────── */
+@layer base {
+  :root {
+    --background: 10 10 10;
+    --foreground: 255 255 255;
+    --card: 20 20 20;
+    --card-foreground: 255 255 255;
+    --popover: 20 20 20;
+    --popover-foreground: 255 255 255;
+    --primary: 255 59 48;
+    --primary-foreground: 255 255 255;
+    --secondary: 20 20 20;
+    --secondary-foreground: 255 255 255;
+    --muted: 28 28 30;
+    --muted-foreground: 161 161 170;
+    --accent: 255 59 48;
+    --accent-foreground: 255 255 255;
+    --destructive: 255 59 48;
+    --destructive-foreground: 255 255 255;
+    --border: rgba(255, 255, 255, 0.1);
+    --input: rgba(255, 255, 255, 0.1);
+    --ring: 255 59 48;
+    --radius: 0.125rem;
+    --red: #FF3B30;
+    --red-hover: #FF6B63;
+    --green: #34C759;
+    --gold: #FFCC00;
+    --blue: #007AFF;
+    --surface: #141414;
+    --surface2: #1C1C1E;
+    --zinc: #A1A1AA;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Base Reset
+───────────────────────────────────────────── */
+@layer base {
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+  body {
+    @apply bg-[#0A0A0A] text-white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: #0A0A0A; }
+  ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #FF3B30; }
+
+  /* Selection color */
+  ::selection { background: rgba(255, 59, 48, 0.3); color: #fff; }
+
+  /* Smooth global transitions */
+  a, button { transition: all 0.2s ease; }
+
+  /* Input / select base */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"],
+  select,
+  textarea {
+    color-scheme: dark;
+  }
+
+  /* Range slider */
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #2a2a2a;
+    border-radius: 3px;
+    outline: none;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FF3B30;
+    cursor: pointer;
+    border: 3px solid #0A0A0A;
+    box-shadow: 0 0 0 2px #FF3B30;
+    transition: transform 0.2s;
+  }
+  input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+  }
+
+  /* Checkbox */
+  input[type="checkbox"] {
+    accent-color: #FF3B30;
+  }
+
+  /* Debug wrapper */
+  [data-debug-wrapper="true"] { display: contents !important; }
+  [data-debug-wrapper="true"] > * {
+    margin: inherit; padding: inherit;
+    gap: inherit; border: inherit;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Utility / Component Classes
+───────────────────────────────────────────── */
+@layer components {
+
+  /* Card base */
+  .fit-card {
+    @apply bg-[#141414] border border-white/10 rounded-lg overflow-hidden transition-all duration-200;
+  }
+  .fit-card:hover {
+    @apply border-[#FF3B30]/40 shadow-lg shadow-[#FF3B30]/5;
+  }
+
+  /* Red button */
+  .btn-primary {
+    @apply bg-[#FF3B30] text-white font-bold tracking-wide uppercase rounded-md
+           hover:bg-[#FF6B63] active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Ghost button */
+  .btn-ghost {
+    @apply bg-[#141414] text-white border border-white/10 font-bold tracking-wide uppercase rounded-md
+           hover:border-white/30 active:scale-95 transition-all;
+  }
+
+  /* Skeleton shimmer */
+  .skeleton {
+    @apply bg-[#1C1C1E] rounded-md animate-pulse;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider;
+  }
+  .badge-red   { @apply badge bg-[#FF3B30]/20 text-[#FF3B30] border border-[#FF3B30]/30; }
+  .badge-green { @apply badge bg-[#34C759]/20 text-[#34C759] border border-[#34C759]/30; }
+  .badge-gold  { @apply badge bg-[#FFCC00]/20 text-[#FFCC00] border border-[#FFCC00]/30; }
+  .badge-blue  { @apply badge bg-[#007AFF]/20 text-[#007AFF] border border-[#007AFF]/30; }
+  .badge-zinc  { @apply badge bg-white/10 text-[#A1A1AA] border border-white/10; }
+
+  /* Section heading */
+  .section-label {
+    @apply text-[#FF3B30] text-xs tracking-[0.2em] uppercase font-bold mb-3;
+  }
+  .section-title {
+    @apply font-['Barlow_Condensed'] font-black uppercase tracking-tight;
+  }
+
+  /* Stat card */
+  .stat-card {
+    @apply fit-card p-6 flex flex-col gap-3;
+  }
+
+  /* Input field */
+  .fit-input {
+    @apply w-full bg-[#0A0A0A] border border-white/10 rounded-md px-4 py-3 text-white
+           focus:border-[#FF3B30] focus:ring-1 focus:ring-[#FF3B30] transition-all outline-none
+           placeholder:text-[#A1A1AA]/60;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Animations
+───────────────────────────────────────────── */
+@layer utilities {
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes shimmer {
+    0%   { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  @keyframes pulse-red {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255,59,48,0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(255,59,48,0); }
+  }
+  @keyframes gradient-x {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  @keyframes count-up {
+    from { opacity: 0; transform: scale(0.7); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+
+  .animate-fade-up   { animation: fadeUp 0.5s ease forwards; }
+  .animate-fade-in   { animation: fadeIn 0.4s ease forwards; }
+  .animate-pulse-red { animation: pulse-red 2s infinite; }
+  .animate-gradient  { animation: gradient-x 4s ease infinite; background-size: 200% 200%; }
+  .animate-count     { animation: count-up 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards; }
+
+  .shimmer-bg {
+    background: linear-gradient(90deg, #1C1C1E 25%, #2a2a2a 50%, #1C1C1E 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  /* Staggered children fade */
+  .stagger > *:nth-child(1) { animation-delay: 0ms; }
+  .stagger > *:nth-child(2) { animation-delay: 80ms; }
+  .stagger > *:nth-child(3) { animation-delay: 160ms; }
+  .stagger > *:nth-child(4) { animation-delay: 240ms; }
+  .stagger > *:nth-child(5) { animation-delay: 320ms; }
+  .stagger > *:nth-child(6) { animation-delay: 400ms; }
+}
