@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "prod_protein_0",
+    "name": "Whey Isolate Gold",
+    "description": "90% protein per serving, ultra-filtered whey isolate with less than 1g of fat and sugar. Rapid amino acid delivery for post-workout muscle recovery. 25 servings per container.",
+    "category": "protein",
+    "price": 21.39,
+    "image_url": "https://images.unsplash.com/photo-1593095948071-474c5cc2c129?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 80,
+    "stock": 120,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_1",
+    "name": "Hydro Whey Elite",
+    "description": "Hydrolized whey peptides for the fastest absorption rate in the whey protein category. Pre-digested for superior bioavailability, ideal for athletes requiring rapid post-exercise recovery.",
+    "category": "protein",
+    "price": 23.54,
+    "image_url": "https://images.unsplash.com/photo-1579722821273-0f6c6d44362f?w=800&q=80",
+    "rating": 4.3,
+    "reviews_count": 97,
+    "stock": 125,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_2",
+    "name": "Casein Night Recovery",
+    "description": "Micellar casein delivers a slow, sustained release of amino acids over 6-8 hours. Perfect before bed to fuel overnight muscle repair and minimize catabolism. 24g protein per scoop.",
+    "category": "protein",
+    "price": 25.69,
+    "image_url": "https://images.unsplash.com/photo-1543353071-873f17a7a088?w=800&q=80",
+    "rating": 4.4,
+    "reviews_count": 114,
+    "stock": 130,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_3",
+    "name": "Plant Protein Matrix",
+    "description": "Tri-blend of pea, brown rice & hemp protein delivering a complete amino acid profile. Certified vegan, soy-free and gluten-free. 20g clean plant protein per serving.",
+    "category": "protein",
+    "price": 27.84,
+    "image_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80",
+    "rating": 4.5,
+    "reviews_count": 131,
+    "stock": 135,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_4",
+    "name": "Mass Gainer Pro",
+    "description": "1250 calories per serving with 50g protein and 250g complex carbs. Engineered for hard gainers who struggle to consume enough calories through whole foods alone.",
+    "category": "protein",
+    "price": 29.99,
+    "image_url": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+    "rating": 4.6,
+    "reviews_count": 148,
+    "stock": 140,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_5",
+    "name": "Lean Protein Blend",
+    "description": "Multi-phase protein blend (whey concentrate + isolate + casein) providing 30g protein with only 130 calories. Ideal for body recomposition and lean muscle building.",
+    "category": "protein",
+    "price": 32.14,
+    "image_url": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80",
+    "rating": 4.7,
+    "reviews_count": 165,
+    "stock": 145,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_6",
+    "name": "Grass-Fed Whey Pure",
+    "description": "Sourced exclusively from grass-fed, hormone-free cows. Rich in CLA and naturally occurring omega-3s. Minimal processing preserves naturally occurring growth factors.",
+    "category": "protein",
+    "price": 34.29,
+    "image_url": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=800&q=80",
+    "rating": 4.8,
+    "reviews_count": 182,
+    "stock": 150,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_7",
+    "name": "Protein Crunch Formula",
+    "description": "Crispy, high-protein formula that mixes into a thick, dessert-like shake. 27g protein per serving with added digestive enzymes to reduce bloating.",
+    "category": "protein",
+    "price": 36.44,
+    "image_url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 199,
+    "stock": 155,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_8",
+    "name": "Lactose-Free Whey",
+    "description": "100% whey isolate processed to remove all lactose. Smooth, gentle on digestion and perfect for those with dairy sensitivities. No compromises on protein quality.",
+    "category": "protein",
+    "price": 38.59,
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
+    "rating": 4.3,
+    "reviews_count": 216,
+    "stock": 160,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_9",
+    "name": "Vanilla Recover Protein",
+    "description": "Premium Tahitian vanilla flavor with 25g of whey and casein blend. Added BCAAs and glutamine accelerate recovery between training sessions.",
+    "category": "protein",
+    "price": 40.74,
+    "image_url": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
+    "rating": 4.4,
+    "reviews_count": 233,
+    "stock": 165,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_10",
+    "name": "Chocolate Muscle Protein",
+    "description": "Rich Belgian chocolate flavor with 28g protein per serving. Enhanced with MCT oil and cocoa flavanols for an antioxidant boost alongside your protein.",
+    "category": "protein",
+    "price": 42.89,
+    "image_url": "https://images.unsplash.com/photo-1611073615830-9b028ac1c20a?w=800&q=80",
+    "rating": 4.5,
+    "reviews_count": 250,
+    "stock": 170,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_11",
+    "name": "Clear Protein Isolate",
+    "description": "Refreshing, juice-like protein experience. 20g of crystal-clear whey isolate that mixes like a sports drink - zero grittiness, zero milky texture.",
+    "category": "protein",
+    "price": 45.04,
+    "image_url": "https://images.unsplash.com/photo-1499084732479-de2c02d45fcc?w=800&q=80",
+    "rating": 4.6,
+    "reviews_count": 267,
+    "stock": 175,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_12",
+    "name": "Dual-Phase Protein",
+    "description": "Fast-acting whey isolate combined with slow-release casein for a sustained 8-hour amino release. Ideal as both a post-workout and meal replacement option.",
+    "category": "protein",
+    "price": 47.19,
+    "image_url": "https://images.unsplash.com/photo-1544216428-b90bdb4ccb90?w=800&q=80",
+    "rating": 4.7,
+    "reviews_count": 284,
+    "stock": 180,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_13",
+    "name": "Ultra Digest Protein",
+    "description": "Enhanced with ProHydrolase enzyme blend to maximize protein digestion by up to 30%. Reduces discomfort and ensures complete amino acid uptake.",
+    "category": "protein",
+    "price": 49.34,
+    "image_url": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80",
+    "rating": 4.8,
+    "reviews_count": 301,
+    "stock": 185,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_protein_14",
+    "name": "Performance Protein X",
+    "description": "Professional-grade formulation with 32g protein, added creatine monohydrate and beta-alanine. The all-in-one stack for serious strength and performance athletes.",
+    "category": "protein",
+    "price": 51.49,
+    "image_url": "https://images.unsplash.com/photo-1505576457997-5f7d9ee4f0f9?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 318,
+    "stock": 190,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_creatine_15",
+    "name": "Creatine Monohydrate Core",
+    "description": "The gold-standard Creapure-grade creatine monohydrate. 5g per serving, unflavored and micronized for instant mixing. Clinically proven to increase strength and power output.",
+    "category": "creatine",
+    "price": 21.59,
+    "image_url": "https://images.unsplash.com/photo-1579722820903-a8878e6b567a?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 80,
+    "stock": 120,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_16",
+    "name": "Micronized Creatine Plus",
+    "description": "Ultra-fine 200-mesh micronization for superior solubility and absorption. No chalky residue - dissolves completely in water. 5g of pure creatine per scoop.",
+    "category": "creatine",
+    "price": 23.74,
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
+    "rating": 4.3,
+    "reviews_count": 97,
+    "stock": 125,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_17",
+    "name": "Creatine HCL Max",
+    "description": "Creatine hydrochloride requires a smaller dose (1-2g) vs monohydrate with zero loading phase and no water retention. Ideal for those sensitive to bloating.",
+    "category": "creatine",
+    "price": 25.89,
+    "image_url": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80",
+    "rating": 4.4,
+    "reviews_count": 114,
+    "stock": 130,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_18",
+    "name": "Creapure Strength",
+    "description": "Sourced from AlzChems patented Creapure facility in Germany - the highest purity creatine available. Third-party tested, 99.99% pure.",
+    "category": "creatine",
+    "price": 28.04,
+    "image_url": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800&q=80",
+    "rating": 4.5,
+    "reviews_count": 131,
+    "stock": 135,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_19",
+    "name": "Creatine Endurance Lab",
+    "description": "Combines 5g creatine monohydrate with 3g beta-alanine for concurrent strength and endurance benefits. Supports both the phosphocreatine system and carnosine buffering.",
+    "category": "creatine",
+    "price": 30.19,
+    "image_url": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&q=80",
+    "rating": 4.6,
+    "reviews_count": 148,
+    "stock": 140,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_20",
+    "name": "Creatine Recovery Drive",
+    "description": "Post-workout creatine formula blended with electrolytes and taurine to replenish cellular ATP stores and accelerate muscle glycogen resynthesis.",
+    "category": "creatine",
+    "price": 32.34,
+    "image_url": "https://images.unsplash.com/photo-1590487988256-9ed24133863e?w=800&q=80",
+    "rating": 4.7,
+    "reviews_count": 165,
+    "stock": 145,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_21",
+    "name": "Buffered Creatine Power",
+    "description": "Kre-Alkalyn pH-buffered creatine remains stable in stomach acid for superior uptake. No bloating, no loading required, no crash.",
+    "category": "creatine",
+    "price": 34.49,
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
+    "rating": 4.8,
+    "reviews_count": 182,
+    "stock": 150,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_22",
+    "name": "Creatine ATP Focus",
+    "description": "Combines creatine monohydrate with ribose and magnesium glycinate to support the full ATP energy cycle. Clinically dosed at 5g creatine per serving.",
+    "category": "creatine",
+    "price": 36.64,
+    "image_url": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 199,
+    "stock": 155,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_23",
+    "name": "Unflavored Creatine Stack",
+    "description": "Pure, unflavored creatine that mixes invisibly into any drink or protein shake. Stackable with any supplement without affecting flavor or texture.",
+    "category": "creatine",
+    "price": 38.79,
+    "image_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80",
+    "rating": 4.3,
+    "reviews_count": 216,
+    "stock": 160,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_24",
+    "name": "Creatine 5000",
+    "description": "Exactly 5,000mg of pharmaceutical-grade creatine monohydrate per serving. Simple, clean, effective - nothing else added.",
+    "category": "creatine",
+    "price": 40.94,
+    "image_url": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80",
+    "rating": 4.4,
+    "reviews_count": 233,
+    "stock": 165,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_25",
+    "name": "Creatine Nitro Blend",
+    "description": "Creatine monohydrate infused with Nitrosigine for enhanced nitric oxide production. Experience superior pumps alongside raw strength gains.",
+    "category": "creatine",
+    "price": 43.09,
+    "image_url": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&q=80",
+    "rating": 4.5,
+    "reviews_count": 250,
+    "stock": 170,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_26",
+    "name": "Creatine Reload",
+    "description": "Post-workout creatine paired with fast carbs (dextrose) to spike insulin and drive creatine into muscle cells rapidly. Ideal for the post-training window.",
+    "category": "creatine",
+    "price": 45.24,
+    "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+    "rating": 4.6,
+    "reviews_count": 267,
+    "stock": 175,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_27",
+    "name": "Creatine Hybrid Pro",
+    "description": "Tri-creatine blend of monohydrate, HCL and ethyl ester for multi-pathway saturation. Faster loading, sustained levels throughout the day.",
+    "category": "creatine",
+    "price": 47.39,
+    "image_url": "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=800&q=80",
+    "rating": 4.7,
+    "reviews_count": 284,
+    "stock": 180,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_28",
+    "name": "Creatine Daily Build",
+    "description": "Low-dose, 3g daily creatine designed for consistent, long-term maintenance supplementation. No cycling needed. Ideal for daily athletes.",
+    "category": "creatine",
+    "price": 49.54,
+    "image_url": "https://images.unsplash.com/photo-1574680178050-55c6a6a96e9d?w=800&q=80",
+    "rating": 4.8,
+    "reviews_count": 301,
+    "stock": 185,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_creatine_29",
+    "name": "Creatine Peak Output",
+    "description": "High-output formula with 8g creatine for extreme power sports, sprint athletes and heavy powerlifters. Stacked with HMB for anti-catabolic support.",
+    "category": "creatine",
+    "price": 51.69,
+    "image_url": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 318,
+    "stock": 190,
+    "goals": [
+      "muscle_gain",
+      "strength",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_30",
+    "name": "Pre-Workout Ignite",
+    "description": "300mg caffeine + L-theanine for clean, crash-free energy. 6g citrulline malate for maximum pumps. No proprietary blends - fully transparent label.",
+    "category": "pre-workout",
+    "price": 22.19,
+    "image_url": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 80,
+    "stock": 120,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_31",
+    "name": "Explosive Energy Shot",
+    "description": "Concentrated 2oz liquid pre-workout delivering 200mg caffeine, 3g beta-alanine and B-vitamins in seconds. No mixing required, carry anywhere.",
+    "category": "pre-workout",
+    "price": 24.34,
+    "image_url": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800&q=80",
+    "rating": 4.3,
+    "reviews_count": 97,
+    "stock": 125,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_32",
+    "name": "Pump Matrix Pre",
+    "description": "Stimulant-free pre-workout with 8g L-citrulline, 2.5g betaine and Nitrosigine for skin-splitting pumps without any caffeine-driven jitteriness.",
+    "category": "pre-workout",
+    "price": 26.49,
+    "image_url": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80",
+    "rating": 4.4,
+    "reviews_count": 114,
+    "stock": 130,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_33",
+    "name": "Focus Drive Pre-Workout",
+    "description": "Nootropic-enhanced pre-workout with 200mg caffeine, 400mg alpha-GPC and lions mane extract. Enhances mind-muscle connection and workout focus.",
+    "category": "pre-workout",
+    "price": 28.64,
+    "image_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80",
+    "rating": 4.5,
+    "reviews_count": 131,
+    "stock": 135,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_34",
+    "name": "Nitric Boost Formula",
+    "description": "Maximum-dose nitric oxide formula: 10g L-citrulline + 600mg agmatine sulfate. Engineered for peak vasodilation and muscle volumization.",
+    "category": "pre-workout",
+    "price": 30.79,
+    "image_url": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&q=80",
+    "rating": 4.6,
+    "reviews_count": 148,
+    "stock": 140,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_35",
+    "name": "Extreme Session Fuel",
+    "description": "High-stim pre-workout for experienced users. 350mg caffeine anhydrous, 1.5mg yohimbine, 5g beta-alanine, and 6g citrulline. Not for beginners.",
+    "category": "pre-workout",
+    "price": 32.94,
+    "image_url": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80",
+    "rating": 4.7,
+    "reviews_count": 165,
+    "stock": 145,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_36",
+    "name": "Pre-Lift Catalyst",
+    "description": "Fully dosed pre-workout with 175mg caffeine for moderate energy, 4g citrulline and creatine monohydrate. The complete lifting stack in one scoop.",
+    "category": "pre-workout",
+    "price": 35.09,
+    "image_url": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=800&q=80",
+    "rating": 4.8,
+    "reviews_count": 182,
+    "stock": 150,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_37",
+    "name": "Stimulant-Free Pump",
+    "description": "Zero caffeine, all pump. Perfect for evening training or caffeine-sensitive athletes. 8g citrulline, 2g arginine nitrate, and pink Himalayan salt.",
+    "category": "pre-workout",
+    "price": 37.24,
+    "image_url": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 199,
+    "stock": 155,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_38",
+    "name": "Energy Surge Pre",
+    "description": "Naturally sourced energy from green tea extract (200mg EGCG) and coffeeberry for smooth, jitter-free workout energy without synthetic stimulants.",
+    "category": "pre-workout",
+    "price": 39.39,
+    "image_url": "https://images.unsplash.com/photo-1574680178050-55c6a6a96e9d?w=800&q=80",
+    "rating": 4.3,
+    "reviews_count": 216,
+    "stock": 160,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_39",
+    "name": "Power Start Blend",
+    "description": "Moderate-stim formula with 200mg caffeine, 3.2g beta-alanine and 5g creatine. The starter pre-workout for those building their tolerance.",
+    "category": "pre-workout",
+    "price": 41.54,
+    "image_url": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&q=80",
+    "rating": 4.4,
+    "reviews_count": 233,
+    "stock": 165,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_40",
+    "name": "Max Rep Pre-Workout",
+    "description": "Formulated around the key ingredients proven in clinical studies: 6g citrulline, 3.2g beta-alanine, 1.6g betaine, 200mg caffeine. Science first.",
+    "category": "pre-workout",
+    "price": 43.69,
+    "image_url": "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=800&q=80",
+    "rating": 4.5,
+    "reviews_count": 250,
+    "stock": 170,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_41",
+    "name": "Athlete Launch Pre",
+    "description": "NSF Certified for Sport - tested clean for 270+ banned substances. Safe for competing athletes. 200mg caffeine, 4g citrulline, full B-vitamin profile.",
+    "category": "pre-workout",
+    "price": 45.84,
+    "image_url": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=800&q=80",
+    "rating": 4.6,
+    "reviews_count": 267,
+    "stock": 175,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_42",
+    "name": "Pre-Workout Alpha",
+    "description": "Alpha-GPC enhanced formula for heightened cognitive focus during training. 200mg caffeine + 600mg alpha-GPC + 5g creatine per serving.",
+    "category": "pre-workout",
+    "price": 47.99,
+    "image_url": "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?w=800&q=80",
+    "rating": 4.7,
+    "reviews_count": 284,
+    "stock": 180,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_43",
+    "name": "Redline Performance Pre",
+    "description": "Professional-grade matrix targeting high-intensity interval athletes. Combines caffeine, electrolytes, citrulline, and taurine for performance and hydration.",
+    "category": "pre-workout",
+    "price": 50.14,
+    "image_url": "https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=800&q=80",
+    "rating": 4.8,
+    "reviews_count": 301,
+    "stock": 185,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_pre-workout_44",
+    "name": "Vascular Pump Pro",
+    "description": "Targets maximum blood flow with 10g L-citrulline, 3g L-arginine, beetroot extract (500mg), and pine bark extract. Stimulant-free vascular expansion.",
+    "category": "pre-workout",
+    "price": 52.29,
+    "image_url": "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 318,
+    "stock": 190,
+    "goals": [
+      "strength",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_45",
+    "name": "BCAA 2:1:1 Recovery",
+    "description": "Optimal 2:1:1 leucine:isoleucine:valine ratio - the clinically validated BCAA ratio for maximum muscle protein synthesis. 7g BCAAs per serving.",
+    "category": "bcaa",
+    "price": 20.79,
+    "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 80,
+    "stock": 120,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_46",
+    "name": "Intra-Workout BCAA+",
+    "description": "Designed for sipping during training. 5g BCAAs + 3g glutamine + electrolytes to prevent muscle breakdown, maintain hydration and extend performance.",
+    "category": "bcaa",
+    "price": 22.94,
+    "image_url": "https://images.unsplash.com/photo-1593476123561-9516f2097158?w=800&q=80",
+    "rating": 4.3,
+    "reviews_count": 97,
+    "stock": 125,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_47",
+    "name": "Electrolyte BCAA Hydrate",
+    "description": "Hydration-focused formula combining 5g BCAAs with sodium, potassium, magnesium and coconut water powder. Combat cramps and power endurance.",
+    "category": "bcaa",
+    "price": 25.09,
+    "image_url": "https://images.unsplash.com/photo-1517964603305-11c0f6f66012?w=800&q=80",
+    "rating": 4.4,
+    "reviews_count": 114,
+    "stock": 130,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_48",
+    "name": "Zero Sugar BCAA",
+    "description": "Naturally sweetened with stevia and monk fruit. Zero sugar, zero calories, zero artificial colors. 7g BCAAs in a refreshing fruit punch flavor.",
+    "category": "bcaa",
+    "price": 27.24,
+    "image_url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
+    "rating": 4.5,
+    "reviews_count": 131,
+    "stock": 135,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_49",
+    "name": "BCAA Endurance Mix",
+    "description": "4:1:1 leucine-heavy formula for endurance athletes. Higher leucine dose maintains MPS during long cardio sessions, reducing muscle fiber damage.",
+    "category": "bcaa",
+    "price": 29.39,
+    "image_url": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&q=80",
+    "rating": 4.6,
+    "reviews_count": 148,
+    "stock": 140,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_50",
+    "name": "BCAA Leucine Max",
+    "description": "Leucine-amplified formula with 5g leucine per serving - clinically the most important BCAA for triggering muscle protein synthesis. Enhanced with vitamin D3.",
+    "category": "bcaa",
+    "price": 31.54,
+    "image_url": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80",
+    "rating": 4.7,
+    "reviews_count": 165,
+    "stock": 145,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_51",
+    "name": "BCAA Reload",
+    "description": "Post-workout BCAA formula with added tart cherry extract (500mg) to reduce delayed onset muscle soreness (DOMS) and accelerate recovery time.",
+    "category": "bcaa",
+    "price": 33.69,
+    "image_url": "https://images.unsplash.com/photo-1579722821273-0f6c6d44362f?w=800&q=80",
+    "rating": 4.8,
+    "reviews_count": 182,
+    "stock": 150,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_52",
+    "name": "BCAA Muscle Shield",
+    "description": "Anti-catabolic formula combining 7g BCAAs with 3g HMB (beta-hydroxy beta-methylbutyrate) to minimize muscle tissue breakdown during caloric deficits.",
+    "category": "bcaa",
+    "price": 35.84,
+    "image_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 199,
+    "stock": 155,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_53",
+    "name": "BCAA Fast Absorb",
+    "description": "Free-form amino acids for instant absorption without digestion. Ideal consumed immediately before or during training for real-time muscle protection.",
+    "category": "bcaa",
+    "price": 37.99,
+    "image_url": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=800&q=80",
+    "rating": 4.3,
+    "reviews_count": 216,
+    "stock": 160,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_54",
+    "name": "Fermented BCAA Core",
+    "description": "Plant-fermented BCAAs sourced 100% from non-GMO, vegan fermentation - not animal keratin or hair. Same efficacy, ethical sourcing, fully transparent.",
+    "category": "bcaa",
+    "price": 40.14,
+    "image_url": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&q=80",
+    "rating": 4.4,
+    "reviews_count": 233,
+    "stock": 165,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_55",
+    "name": "BCAA Hydration Pro",
+    "description": "Sport drink-style BCAA with 5g aminos, full electrolyte panel and added vitamin C. Functions as an intra-workout hydration and recovery beverage.",
+    "category": "bcaa",
+    "price": 42.29,
+    "image_url": "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=800&q=80",
+    "rating": 4.5,
+    "reviews_count": 250,
+    "stock": 170,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_56",
+    "name": "BCAA Night Repair",
+    "description": "Nighttime recovery formula: 7g BCAAs with 200mg magnesium glycinate and L-glycine. Taken before bed to support overnight muscle protein synthesis.",
+    "category": "bcaa",
+    "price": 44.44,
+    "image_url": "https://images.unsplash.com/photo-1590487988256-9ed24133863e?w=800&q=80",
+    "rating": 4.6,
+    "reviews_count": 267,
+    "stock": 175,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_57",
+    "name": "BCAA Energy Fusion",
+    "description": "BCAAs blended with 100mg natural caffeine (from coffeeberry) and B-vitamins for a light energy boost alongside amino acid support.",
+    "category": "bcaa",
+    "price": 46.59,
+    "image_url": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&q=80",
+    "rating": 4.7,
+    "reviews_count": 284,
+    "stock": 180,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_58",
+    "name": "BCAA Recovery Stack",
+    "description": "Comprehensive recovery formula stacking BCAAs, glutamine, citrulline and electrolytes into one intra/post-workout product. Simplify your supplement stack.",
+    "category": "bcaa",
+    "price": 48.74,
+    "image_url": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80",
+    "rating": 4.8,
+    "reviews_count": 301,
+    "stock": 185,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_bcaa_59",
+    "name": "BCAA Amino Prime",
+    "description": "Clinical-dose BCAA featuring EAA co-support (9 essential amino acids) alongside BCAAs, offering a more complete amino acid profile for elite-level recovery.",
+    "category": "bcaa",
+    "price": 50.89,
+    "image_url": "https://images.unsplash.com/photo-1607627000458-210e8d2bdb1d?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 318,
+    "stock": 190,
+    "goals": [
+      "muscle_gain",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_vitamins_60",
+    "name": "Daily Multivitamin Max",
+    "description": "Comprehensive 30-nutrient formula covering all essential vitamins and minerals. Includes methylated B12 and folate for superior bioavailability. One daily capsule.",
+    "category": "vitamins",
+    "price": 21.59,
+    "image_url": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 80,
+    "stock": 120,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_61",
+    "name": "Active Men Formula",
+    "description": "Formulated specifically for active males: higher zinc (15mg) for testosterone support, B-complex for energy, vitamin D3 (3000IU) and lycopene for prostate health.",
+    "category": "vitamins",
+    "price": 23.74,
+    "image_url": "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=800&q=80",
+    "rating": 4.3,
+    "reviews_count": 97,
+    "stock": 125,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_62",
+    "name": "Active Women Formula",
+    "description": "Women-specific multivitamin with iron (18mg), folate (400mcg), vitamin K2 for bone density, and evening primrose oil for hormonal balance.",
+    "category": "vitamins",
+    "price": 25.89,
+    "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80",
+    "rating": 4.4,
+    "reviews_count": 114,
+    "stock": 130,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_63",
+    "name": "Immune Defense Complex",
+    "description": "High-potency immune stack: vitamin C (1000mg), zinc (25mg), vitamin D3 (5000IU), elderberry extract and echinacea. Daily immune system defense.",
+    "category": "vitamins",
+    "price": 28.04,
+    "image_url": "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=800&q=80",
+    "rating": 4.5,
+    "reviews_count": 131,
+    "stock": 135,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_64",
+    "name": "Vitamin D3 + K2",
+    "description": "5000IU D3 paired with 100mcg MK-7 form of K2 to ensure calcium is deposited in bones, not arteries. The essential duo for bone and cardiovascular health.",
+    "category": "vitamins",
+    "price": 30.19,
+    "image_url": "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=800&q=80",
+    "rating": 4.6,
+    "reviews_count": 148,
+    "stock": 140,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_65",
+    "name": "Magnesium Recovery",
+    "description": "Magnesium glycinate - the most bioavailable, gentle form. 400mg elemental magnesium per serving. Reduces muscle cramps, improves sleep quality and recovery.",
+    "category": "vitamins",
+    "price": 32.34,
+    "image_url": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80",
+    "rating": 4.7,
+    "reviews_count": 165,
+    "stock": 145,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_66",
+    "name": "Zinc Performance Support",
+    "description": "30mg zinc picolinate - the superior absorbed form. Supports testosterone levels, immune function, protein synthesis and wound healing.",
+    "category": "vitamins",
+    "price": 34.49,
+    "image_url": "https://images.unsplash.com/photo-1550572017-4fcdbb59cc32?w=800&q=80",
+    "rating": 4.8,
+    "reviews_count": 182,
+    "stock": 150,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_67",
+    "name": "Omega 3 Ultra",
+    "description": "Triple-strength fish oil delivering 2400mg EPA + DHA per two softgels. Molecularly distilled to remove heavy metals and PCBs. IFOS certified purity.",
+    "category": "vitamins",
+    "price": 36.64,
+    "image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 199,
+    "stock": 155,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_68",
+    "name": "Joint Care Essentials",
+    "description": "Comprehensive joint stack: 1500mg glucosamine sulfate, 1200mg chondroitin, 500mg MSM, 100mg type II collagen and 15mg hyaluronic acid.",
+    "category": "vitamins",
+    "price": 38.79,
+    "image_url": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
+    "rating": 4.3,
+    "reviews_count": 216,
+    "stock": 160,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_69",
+    "name": "B-Complex Energy",
+    "description": "Full spectrum B-vitamin complex with methylated B12 (1000mcg) and methylfolate. Supports energy metabolism, neurological health and stress resilience.",
+    "category": "vitamins",
+    "price": 40.94,
+    "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+    "rating": 4.4,
+    "reviews_count": 233,
+    "stock": 165,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_70",
+    "name": "Electrolyte Mineral Plus",
+    "description": "Balanced electrolyte formula: sodium, potassium, magnesium, calcium and trace minerals. Ideal for athletes losing electrolytes through sweat.",
+    "category": "vitamins",
+    "price": 43.09,
+    "image_url": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
+    "rating": 4.5,
+    "reviews_count": 250,
+    "stock": 170,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_71",
+    "name": "Greens Micronutrient Blend",
+    "description": "35 whole-food greens, vegetables & sprouts in one convenient scoop. Supports alkalinity, digestion and daily micronutrient intake without the prep.",
+    "category": "vitamins",
+    "price": 45.24,
+    "image_url": "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=800&q=80",
+    "rating": 4.6,
+    "reviews_count": 267,
+    "stock": 175,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_72",
+    "name": "Antioxidant Shield",
+    "description": "Powerful antioxidant complex: vitamin E (400IU), vitamin C (1000mg), CoQ10 (100mg), alpha-lipoic acid (300mg) and resveratrol. Combats oxidative stress.",
+    "category": "vitamins",
+    "price": 47.39,
+    "image_url": "https://images.unsplash.com/photo-1571019613914-85f342c6a11e?w=800&q=80",
+    "rating": 4.7,
+    "reviews_count": 284,
+    "stock": 180,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_73",
+    "name": "Sleep & Recovery Minerals",
+    "description": "Natural sleep support: magnesium glycinate (400mg), zinc (10mg), ashwagandha KSM-66 (600mg) and L-glycine. Promotes deep sleep and muscle repair.",
+    "category": "vitamins",
+    "price": 49.54,
+    "image_url": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&q=80",
+    "rating": 4.8,
+    "reviews_count": 301,
+    "stock": 185,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_vitamins_74",
+    "name": "Comprehensive Health Pack",
+    "description": "All-in-one daily health packet with multivitamin, omega-3, vitamin D3/K2, and probiotic. Everything your body needs, perfectly portioned for daily use.",
+    "category": "vitamins",
+    "price": 51.69,
+    "image_url": "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 318,
+    "stock": 190,
+    "goals": [
+      "general_fitness",
+      "weight_loss",
+      "endurance"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_75",
+    "name": "Thermo Burn Elite",
+    "description": "Advanced thermogenic with 300mg caffeine, 500mg green tea extract (EGCG), 100mg capsaicin and 2mg synephrine. Clinically supported fat oxidation ingredients.",
+    "category": "fat-burner",
+    "price": 21.99,
+    "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 80,
+    "stock": 120,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_76",
+    "name": "Lean Cut Accelerator",
+    "description": "Moderate-stim fat burner with 200mg caffeine, 500mg green coffee bean extract and 200mg L-carnitine. Supports metabolism and lipid mobilization.",
+    "category": "fat-burner",
+    "price": 24.14,
+    "image_url": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
+    "rating": 4.3,
+    "reviews_count": 97,
+    "stock": 125,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_77",
+    "name": "Metabolic Boost Stack",
+    "description": "Stims-free metabolic enhancer using cayenne pepper extract, green tea EGCG, and conjugated linoleic acid (CLA) to naturally elevate metabolic rate.",
+    "category": "fat-burner",
+    "price": 26.29,
+    "image_url": "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=800&q=80",
+    "rating": 4.4,
+    "reviews_count": 114,
+    "stock": 130,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_78",
+    "name": "Shred Matrix Formula",
+    "description": "8-stage fat loss matrix combining caffeine, L-carnitine, raspberry ketones, CLA, green tea, cayenne, white willow bark and chromium picolinate.",
+    "category": "fat-burner",
+    "price": 28.44,
+    "image_url": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80",
+    "rating": 4.5,
+    "reviews_count": 131,
+    "stock": 135,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_79",
+    "name": "Cardio Burn Fuel",
+    "description": "Formulated for cardio sessions: sustained energy + enhanced fat oxidation. 150mg caffeine, 2g L-carnitine and B-vitamins to maximize calorie burn during cardio.",
+    "category": "fat-burner",
+    "price": 30.59,
+    "image_url": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800&q=80",
+    "rating": 4.6,
+    "reviews_count": 148,
+    "stock": 140,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_80",
+    "name": "Fat Oxidation Plus",
+    "description": "L-carnitine L-tartrate (2000mg) + coenzyme A precursors to shuttle fatty acids into mitochondria for energy. Stimulant-free, ideal for fasted cardio.",
+    "category": "fat-burner",
+    "price": 32.74,
+    "image_url": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&q=80",
+    "rating": 4.7,
+    "reviews_count": 165,
+    "stock": 145,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_81",
+    "name": "Cutting Phase Support",
+    "description": "Comprehensive cutting formula targeting appetite, energy and fat metabolism: glucomannan (fiber), 200mg caffeine, coleus forskohlii and cayenne.",
+    "category": "fat-burner",
+    "price": 34.89,
+    "image_url": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&q=80",
+    "rating": 4.8,
+    "reviews_count": 182,
+    "stock": 150,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_82",
+    "name": "L-Carnitine Drive",
+    "description": "Pharmaceutical-grade L-Carnitine L-Tartrate at 3000mg per serving. Supports fatty acid oxidation, reduces exercise-induced muscle damage and enhances recovery.",
+    "category": "fat-burner",
+    "price": 37.04,
+    "image_url": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 199,
+    "stock": 155,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_83",
+    "name": "Thermo Focus Advanced",
+    "description": "Cognitive and thermogenic formula: 250mg caffeine, 200mg L-theanine for focus balance, plus green tea, ginger root and black pepper extract.",
+    "category": "fat-burner",
+    "price": 39.19,
+    "image_url": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=800&q=80",
+    "rating": 4.3,
+    "reviews_count": 216,
+    "stock": 160,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_84",
+    "name": "Appetite Control Blend",
+    "description": "Satiety-focused formula with glucomannan (3g), 5-HTP (50mg), chromium picolinate and berberine to support healthy appetite and blood sugar balance.",
+    "category": "fat-burner",
+    "price": 41.34,
+    "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+    "rating": 4.4,
+    "reviews_count": 233,
+    "stock": 165,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_85",
+    "name": "Green Tea Burn Complex",
+    "description": "High-potency green tea standardized to 50% EGCG. 1000mg providing 500mg EGCG plus catechins. Supports fat oxidation and provides antioxidant protection.",
+    "category": "fat-burner",
+    "price": 43.49,
+    "image_url": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
+    "rating": 4.5,
+    "reviews_count": 250,
+    "stock": 170,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_86",
+    "name": "Daytime Fat Burner",
+    "description": "All-day metabolic support without afternoon crashes. Time-released caffeine matrix with thyroid-supporting iodine, selenium and L-tyrosine.",
+    "category": "fat-burner",
+    "price": 45.64,
+    "image_url": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80",
+    "rating": 4.6,
+    "reviews_count": 267,
+    "stock": 175,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_87",
+    "name": "Stimulant-Free Burner",
+    "description": "Zero stimulant, zero jitters. CLA (3g), acetyl L-carnitine (2g) and green tea without caffeine. Safe for use twice daily and before bed.",
+    "category": "fat-burner",
+    "price": 47.79,
+    "image_url": "https://images.unsplash.com/photo-1574680178050-55c6a6a96e9d?w=800&q=80",
+    "rating": 4.7,
+    "reviews_count": 284,
+    "stock": 180,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_88",
+    "name": "Core Shred Formula",
+    "description": "Targets visceral/abdominal fat through cortisol management with ashwagandha (600mg KSM-66), phosphatidylserine (400mg) and chromium picolinate.",
+    "category": "fat-burner",
+    "price": 49.94,
+    "image_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80",
+    "rating": 4.8,
+    "reviews_count": 301,
+    "stock": 185,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  },
+  {
+    "id": "prod_fat-burner_89",
+    "name": "Body Recomp Catalyst",
+    "description": "Simultaneous fat loss and muscle preservation stack. HMB (3g) prevents catabolism while CLA and L-carnitine support lipid mobilization. The definitive recomp formula.",
+    "category": "fat-burner",
+    "price": 52.09,
+    "image_url": "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=800&q=80",
+    "rating": 4.2,
+    "reviews_count": 318,
+    "stock": 190,
+    "goals": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ]
+  }
+]

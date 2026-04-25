@@ -13,17 +13,34 @@ const parsePlan = (text) => {
   const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
   const days = [];
   let current = null;
+  let subMode = 'exercises'; // 'exercises' or 'nutrition'
+
   for (const line of lines) {
+    // Detect Day Header
     const dayMatch = line.match(/^(?:#+\s*|\*+\s*)?Day\s+(\d+)\s*[:\-\u2013\u2014]\s*(.+)/i);
     if (dayMatch) {
       if (current) days.push(current);
-      current = { day: parseInt(dayMatch[1]), title: dayMatch[2], exercises: [], meta: [] };
-    } else if (current && (line.startsWith('-') || line.startsWith('*') || line.match(/^\d+\./))) {
-      current.exercises.push(line.replace(/^[*\-\d\.]+\s*/, ''));
-    } else if (!current && line) {
-      if (days.length === 0 && !current) {
-        if (!days._meta) days._meta = [];
-        // store meta info
+      current = { 
+        day: parseInt(dayMatch[1]), 
+        title: dayMatch[2], 
+        exercises: [], 
+        diet: [],
+        meta: [] 
+      };
+      continue;
+    }
+
+    // Detect Sub-mode
+    if (line.match(/EXERCISES:/i)) { subMode = 'exercises'; continue; }
+    if (line.match(/(?:NUTRITION|DIET):/i)) { subMode = 'nutrition'; continue; }
+
+    // Parse items based on submode
+    if (current && (line.startsWith('-') || line.startsWith('*') || line.match(/^\d+\./))) {
+      const cleanLine = line.replace(/^[*\-\d\.]+\s*/, '');
+      if (subMode === 'exercises') {
+        current.exercises.push(cleanLine);
+      } else {
+        current.diet.push(cleanLine);
       }
     }
   }
@@ -235,6 +252,7 @@ const TrainingPage = () => {
   const [loading, setLoading] = useState(false);
   const [analyzing, setAnalyzing] = useState(false);
   const [activeDay, setActiveDay] = useState(0);
+  const [activeTab, setActiveTab] = useState('workout'); // 'workout' or 'nutrition'
   const [progress, setProgress] = useState([]);
   const [newProgress, setNewProgress] = useState({
     date: new Date().toISOString().split('T')[0],
@@ -559,46 +577,102 @@ const TrainingPage = () => {
                         </div>
                       </div>
 
-                      <div className="flex items-center gap-2 mb-4">
-                        <div className="w-10 h-10 rounded-xl bg-[#FF3B30] flex items-center justify-center text-white font-black text-lg shadow-lg shadow-[#FF3B30]/20">
-                          {generatedPlan[activeDay].day}
-                        </div>
-                        <div>
-                          <div className="font-black text-lg uppercase tracking-tight">{generatedPlan[activeDay].title}</div>
-                          <div className="text-[10px] text-[#A1A1AA] uppercase font-bold tracking-widest">{generatedPlan[activeDay].exercises.length} Exercises Targeted</div>
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-1 gap-3">
-                        {generatedPlan[activeDay].exercises.map((ex, i) => {
-                          const parsed = parseExercise(ex);
-                          return (
-                            <div 
-                              key={i} 
-                              className="bg-[#141414] rounded-xl p-4 flex items-center justify-between gap-4 border border-white/5 hover:border-[#FF3B30]/40 hover:bg-white/[0.02] transition-all group animate-fade-in"
-                              style={{ animationDelay: `${(i + 1) * 100}ms` }}
-                            >
-                              <div className="flex items-center gap-4">
-                                <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[10px] font-black text-[#A1A1AA] group-hover:text-[#FF3B30] group-hover:border-[#FF3B30]/30 transition-all">
-                                  {i + 1}
-                                </div>
-                                <div>
-                                  <span className="text-sm font-black uppercase tracking-tight block group-hover:text-white transition-colors">{parsed.name}</span>
-                                  {parsed.rest && <span className="text-[10px] text-[#A1A1AA] font-bold uppercase tracking-tighter">Rest: {parsed.rest}</span>}
-                                </div>
-                              </div>
-                              <div className="flex items-center gap-2 flex-shrink-0">
-                                {parsed.sets && (
-                                  <div className="flex flex-col items-end">
-                                    <span className="text-[10px] text-[#A1A1AA] font-bold uppercase">Volume</span>
-                                    <span className="text-sm font-black text-[#FF3B30] tracking-tighter">{parsed.sets} × {parsed.reps}</span>
-                                  </div>
-                                )}
+                      {/* Header + Toggle */}
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/5 pb-5">
+                         <div className="flex items-center gap-2">
+                            <div className="w-10 h-10 rounded-xl bg-[#FF3B30] flex items-center justify-center text-white font-black text-lg shadow-lg shadow-[#FF3B30]/20">
+                              {generatedPlan[activeDay].day}
+                            </div>
+                            <div>
+                              <div className="font-black text-lg uppercase tracking-tight">{generatedPlan[activeDay].title}</div>
+                              <div className="text-[10px] text-[#A1A1AA] uppercase font-bold tracking-widest">
+                                {activeTab === 'workout' ? `${generatedPlan[activeDay].exercises.length} Exercises` : `${generatedPlan[activeDay].diet.length} Meal Points`}
                               </div>
                             </div>
-                          );
-                        })}
+                         </div>
+                         
+                         {/* Toggle Switch */}
+                         <div className="flex bg-[#0A0A0A] p-0.5 rounded-lg border border-white/10 w-fit">
+                            {[
+                              { id: 'workout', lbl: 'Workout', icon: Barbell },
+                              { id: 'nutrition', lbl: 'Nutrition', icon: Fire }
+                            ].map(t => (
+                              <button 
+                                key={t.id}
+                                onClick={() => setActiveTab(t.id)}
+                                className={`flex items-center gap-2 px-4 py-2 rounded-md text-[10px] font-black uppercase tracking-widest transition-all ${
+                                  activeTab === t.id 
+                                    ? 'bg-white text-[#0A0A0A] shadow-xl' 
+                                    : 'text-[#A1A1AA] hover:text-white'
+                                }`}
+                              >
+                                <t.icon size={14} weight={activeTab === t.id ? 'fill' : 'bold'} /> {t.lbl}
+                              </button>
+                            ))}
+                         </div>
                       </div>
+
+                      {/* Content View */}
+                      {activeTab === 'workout' ? (
+                        <div className="grid grid-cols-1 gap-3 animate-fade-in">
+                          {generatedPlan[activeDay].exercises.map((ex, i) => {
+                            const parsed = parseExercise(ex);
+                            return (
+                              <div 
+                                key={i} 
+                                className="bg-[#141414] rounded-xl p-4 flex items-center justify-between gap-4 border border-white/5 hover:border-[#FF3B30]/40 hover:bg-white/[0.02] transition-all group animate-fade-in"
+                                style={{ animationDelay: `${(i + 1) * 100}ms` }}
+                              >
+                                <div className="flex items-center gap-4">
+                                  <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[10px] font-black text-[#A1A1AA] group-hover:text-[#FF3B30] group-hover:border-[#FF3B30]/30 transition-all">
+                                    {i + 1}
+                                  </div>
+                                  <div>
+                                    <span className="text-sm font-black uppercase tracking-tight block group-hover:text-white transition-colors">{parsed.name}</span>
+                                    {parsed.rest && <span className="text-[10px] text-[#A1A1AA] font-bold uppercase tracking-tighter">Rest: {parsed.rest}</span>}
+                                  </div>
+                                </div>
+                                <div className="flex items-center gap-2 flex-shrink-0">
+                                  {parsed.sets && (
+                                    <div className="flex flex-col items-end">
+                                      <span className="text-[10px] text-[#A1A1AA] font-bold uppercase">Volume</span>
+                                      <span className="text-sm font-black text-[#FF3B30] tracking-tighter">{parsed.sets} × {parsed.reps}</span>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      ) : (
+                        <div className="grid grid-cols-1 gap-3 animate-fade-in">
+                          {generatedPlan[activeDay].diet && generatedPlan[activeDay].diet.length > 0 ? (
+                            generatedPlan[activeDay].diet.map((item, i) => (
+                              <div 
+                                key={i} 
+                                className="bg-[#141414] rounded-xl p-5 border border-white/5 hover:border-[#FF3B30]/40 transition-all group animate-fade-in"
+                                style={{ animationDelay: `${(i + 1) * 100}ms` }}
+                              >
+                                <div className="flex items-center gap-3 mb-2">
+                                   <div className="p-2 rounded-lg bg-[#FF3B30]/10 text-[#FF3B30]">
+                                      <Fire size={18} weight="fill" />
+                                   </div>
+                                   <div className="text-sm font-black text-white uppercase tracking-tight">
+                                      {item.includes(':') ? item.split(':')[0] : `Meal Item ${i+1}`}
+                                   </div>
+                                </div>
+                                <p className="text-sm text-[#A1A1AA] leading-relaxed italic border-l border-white/10 pl-4 ml-4">
+                                  {item.includes(':') ? item.split(':')[1].trim() : item}
+                                </p>
+                              </div>
+                            ))
+                          ) : (
+                            <div className="text-center py-20 bg-white/5 rounded-2xl border border-dashed border-white/10">
+                               <p className="text-[#A1A1AA] text-sm italic">New plan needed to generate daily nutrition routines.</p>
+                            </div>
+                          )}
+                        </div>
+                      )}
                     </div>
                   )}
                   {/* Fallback for unparseable plans */}

@@ -449,7 +449,23 @@ def build_product_image_url(category: str, product_name: str, idx: int) -> str:
     return pool[idx % len(pool)]
 
 
-PRODUCTS = build_products()
+PRODUCTS_DB_FILE = ROOT_DIR / 'products_db.json'
+
+def load_or_create_products() -> List[Dict[str, Any]]:
+    if PRODUCTS_DB_FILE.exists():
+        with open(PRODUCTS_DB_FILE, 'r') as f:
+            return json.load(f)
+    else:
+        products = build_products()
+        # Make IDs deterministic before saving if they were random
+        for i, p in enumerate(products):
+            if '-' in p['id']: # If it's a UUID
+                p['id'] = f"prod_{p['category']}_{i}"
+        with open(PRODUCTS_DB_FILE, 'w') as f:
+            json.dump(products, f, indent=2)
+        return products
+
+PRODUCTS = load_or_create_products()
 PRODUCTS_BY_ID = {p['id']: p for p in PRODUCTS}
 
 
@@ -589,13 +605,14 @@ def build_gemini_workout_plan(user: Dict[str, Any], goal: str, experience_level:
 
     system_hint = (
         'You are an elite sports scientist and head coach at FitPro Market. '
-        'You provide high-performance training protocols based on rigorous bio-metric analysis. '
+        'You provide high-performance training AND nutrition protocols based on rigorous bio-metric analysis. '
         'Your response MUST be divided into two specific sections with these exact headers:\n'
-        '1. "ANALYSIS:": A 2-3 sentence sophisticated technical assessment of the user s physical profile (mentioning BMI, metabolic considerations, and goal alignment).\n'
-        '2. "PLAN:": The high-performance schedule starting with "Day 1".\n\n'
-        'Use the format "Day X: [Title]" for daily headers. '
-        'For each exercise, use a dash "-" as a bullet point. '
-        'Include precise volume (sets x reps), rest periods, and a high-level technical form tip.'
+        '1. "ANALYSIS:": A 2-3 sentence technical assessment of the user profile and metabolic needs.\n'
+        '2. "PLAN:": The schedule starting with "Day 1".\n\n'
+        'For each Day in the PLAN, you MUST include TWO sub-sections:\n'
+        '- "EXERCISES:": Workout moves with sets x reps, rest, and form tips.\n'
+        '- "NUTRITION:": Specific daily meal routine (Breakfast, Lunch, Dinner) optimized for that day s training volume.\n\n'
+        'Use "Day X: [Title]" for daily headers. Use dashes "-" for bullet points.'
     )
     user_context = (
         f'User Data:\n'
